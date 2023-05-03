@@ -67,5 +67,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
          * Dashboard Routes
          */
         Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard.index');
+
+        Route::resource('/contacts', 'ContactController');
+        Route::get('/search', 'ContactController@search')->name('contacts.search');
     });
 });

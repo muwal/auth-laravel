@@ -10,6 +10,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('dashboard.index') }}">Dashboard</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ route('contacts.index') }}">Contact</a>
+                </li>
             </ul>
             <ul class="navbar-nav">
                 @auth
